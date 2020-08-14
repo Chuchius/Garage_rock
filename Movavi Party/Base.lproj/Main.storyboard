@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Movavi_Party" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="dxL-j0-khG">
+                                <rect key="frame" x="182.5" y="104" width="51" height="31"/>
+                                <connections>
+                                    <action selector="beerSwitched:" destination="BYZ-38-t0r" eventType="valueChanged" id="dYy-Fx-3Ag"/>
+                                </connections>
+                            </switch>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="4Gn-yE-AwG">
+                                <rect key="frame" x="182.5" y="275" width="51" height="31"/>
+                                <connections>
+                                    <action selector="ufoSwitched:" destination="BYZ-38-t0r" eventType="valueChanged" id="Ibk-4H-0ad"/>
+                                </connections>
+                            </switch>
+                            <switch hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="IlI-du-ECm">
+                                <rect key="frame" x="182.5" y="446" width="51" height="31"/>
+                                <connections>
+                                    <action selector="rockMusicSwitched:" destination="BYZ-38-t0r" eventType="valueChanged" id="wtp-mx-A4Y"/>
+                                    <action selector="ufoSwitched:" destination="BYZ-38-t0r" eventType="valueChanged" id="J4Q-Fj-Lg3"/>
+                                </connections>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Одно пиво" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N3Z-8j-Yex">
+                                <rect key="frame" x="87.5" y="175" width="239" height="60"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Телепортация" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QfC-t0-nn9">
+                                <rect key="frame" x="49.5" y="346" width="315" height="60"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label hidden="YES" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🛸" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MML-02-z1x">
+                                <rect key="frame" x="0.0" y="346" width="180" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="180" id="38G-g3-uIV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Включить гаражный рок" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PxJ-NM-9Wo">
+                                <rect key="frame" x="0.0" y="457" width="414" height="119.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="dxL-j0-khG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="43N-7k-q2c"/>
+                            <constraint firstItem="N3Z-8j-Yex" firstAttribute="top" secondItem="dxL-j0-khG" secondAttribute="bottom" constant="40" id="7aM-cA-flq"/>
+                            <constraint firstItem="4Gn-yE-AwG" firstAttribute="top" secondItem="N3Z-8j-Yex" secondAttribute="bottom" constant="40" id="BmE-da-gpe"/>
+                            <constraint firstItem="dxL-j0-khG" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="60" id="DBu-xx-5JP"/>
+                            <constraint firstItem="QfC-t0-nn9" firstAttribute="top" secondItem="4Gn-yE-AwG" secondAttribute="bottom" constant="40" id="IeO-9g-UDJ"/>
+                            <constraint firstItem="MML-02-z1x" firstAttribute="bottom" secondItem="QfC-t0-nn9" secondAttribute="bottom" id="LTW-6i-Kmg"/>
+                            <constraint firstItem="MML-02-z1x" firstAttribute="top" secondItem="QfC-t0-nn9" secondAttribute="top" id="P2o-KR-8vP"/>
+                            <constraint firstItem="MML-02-z1x" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="TFu-Db-ARB"/>
+                            <constraint firstItem="N3Z-8j-Yex" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="TgR-XN-k1s"/>
+                            <constraint firstItem="PxJ-NM-9Wo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="U0r-SO-KJb"/>
+                            <constraint firstItem="IlI-du-ECm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gAS-s2-DH3"/>
+                            <constraint firstItem="4Gn-yE-AwG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hzy-JY-JnB"/>
+                            <constraint firstItem="IlI-du-ECm" firstAttribute="top" secondItem="QfC-t0-nn9" secondAttribute="bottom" constant="40" id="iiz-XP-gDq"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="PxJ-NM-9Wo" secondAttribute="trailing" id="lmG-YI-XXV"/>
+                            <constraint firstItem="QfC-t0-nn9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qoL-hF-MvF"/>
+                            <constraint firstItem="PxJ-NM-9Wo" firstAttribute="top" secondItem="IlI-du-ECm" secondAttribute="bottom" constant="-20" id="zLe-QL-e96"/>
+                            <constraint firstItem="PxJ-NM-9Wo" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="zi8-00-qlX"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="beerLabel" destination="N3Z-8j-Yex" id="7a4-gY-c7L"/>
+                        <outlet property="beerSwitch" destination="dxL-j0-khG" id="hqX-y8-MYd"/>
+                        <outlet property="movingUfoLabel" destination="MML-02-z1x" id="jxe-jq-fSo"/>
+                        <outlet property="rockMusicLabel" destination="PxJ-NM-9Wo" id="OWr-9a-Th6"/>
+                        <outlet property="rockMusicSwitch" destination="IlI-du-ECm" id="uKo-up-DcI"/>
+                        <outlet property="ufoLabel" destination="QfC-t0-nn9" id="zPc-1U-L3E"/>
+                        <outlet property="ufoLeft" destination="TFu-Db-ARB" id="WSN-Qh-ppR"/>
+                        <outlet property="ufoSwitch" destination="4Gn-yE-AwG" id="uoR-KH-wtk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="24.637681159420293" y="22.767857142857142"/>
+        </scene>
+    </scenes>
+</document>
